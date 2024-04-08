@@ -14,12 +14,12 @@
     /* H1 */
     --h1-color: #0E103A;
     --h1-weight: 600;
-    --h1-font-size: 2rem;
+    --h1-font-size: 2.3rem;
 
     /* H2 */
     --h2-color: #8C8EB2;
     --h2-weight: 400;
-    --h2-font-size: 1.3rem;
+    --h2-font-size: 1.2rem;
 
     /* header */
     --header-marge: 30px;
@@ -164,14 +164,9 @@ main a {
 
 /* ==================== FOOTER ==================== */
 
-footer {
+.btn_bot {
     position: absolute;
     bottom: 5vh;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-footer button {
     color: var(--btn-bottom-color);
     background: var(--btn-bottom-background);
     box-shadow: var(--btn-bottom-shadow);
@@ -183,6 +178,97 @@ footer button {
     transition: .3s ease;
 }
 
-footer button:hover {
+.btn_bot:hover {
     transform: scale(1.05);
+}
+
+/* ==================== word_of_the_day ==================== */
+.word_of_the_day {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(25px);
+    padding: 0 7% 150px;
+    display: none;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    gap: 1rem;
+}
+
+.word_of_the_day .card {
+    width: 100%;
+    background: linear-gradient(150deg, rgba(24,29,96,1) 0%, rgba(15,18,59,1) 100%);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 1rem;
+    color: #fff;
+    box-shadow: 0px 42px 36px -24px #10133e91;
+}
+
+.word_of_the_day .card .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.word_of_the_day .card .container h3 {
+    color: #fff;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.word_of_the_day .card .container button {
+    color: #fff;
+    background: linear-gradient(150deg, rgba(178,64,99,1) 0%, rgba(225,77,108,1) 100%);
+    font-size: 1rem;
+    height: 40px;
+    width: 40px;
+    border-radius: var(--border-radius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.word_of_the_day .card h4 {
+    font-size: 1rem;
+    font-weight: 400;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+    color: #D56B86;
+}
+
+.word_of_the_day .card h4 span {
+    color: #CECFD5;
+}
+
+.word_of_the_day .card h4 span strong {
+    font-weight: 700;
+}
+
+.word_of_the_day .card p {
+    color: #797BA3;
+}
+
+.word_of_the_day .card .a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.word_of_the_day .card .a a {
+    color: #D56B86;
 }
