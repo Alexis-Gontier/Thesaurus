@@ -98,6 +98,7 @@ header {
     top: var(--header-marge);
     left: var(--header-marge);
     font-size: 2rem;
+    cursor: pointer;
 }
 
 /* ==================== MAIN ==================== */
