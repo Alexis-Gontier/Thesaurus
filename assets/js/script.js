@@ -1,4 +1,4 @@
-alert("mettre au format téléphone !!")
+// alert("mettre au format téléphone !!")
 
 // word of the day
 let word_of_the_day = document.querySelector('.word_of_the_day')
